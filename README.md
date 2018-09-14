@@ -3,6 +3,7 @@
 Mythic Package File Format (.UOP)
 ---------------------------------
 
+```
 [1] Format Header
 BYTE -> 'M'
 BYTE -> 'Y'
@@ -51,3 +52,4 @@ while ( Number of files in this block )
 [4] Data Header
 end 
 end
+```
