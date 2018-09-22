@@ -239,3 +239,6 @@ if ($len > 0xc) {
     }
 
 }
+
+printf("hash: %08x %08x\n", $edi & $mask, $eax & $mask);
+
