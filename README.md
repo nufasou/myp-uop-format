@@ -38,18 +38,20 @@ BYTE (size of compressed file) -> File
 [4] Data Header (Version 5)
 BYTE[]-> Metadata used by UO patcher
 
+========================================
+
 Pseudocode:
 [1] Format Header
 
 while ( Address of the next block > 0 )
-[2] File Header
+  [2] Block Header
 
-while ( Max number of files per block )
-[3] File Header
-end
+  while ( Max number of files per block )
+    [3] File Header
+  end
 
-while ( Number of files in this block )
-[4] Data Header
-end 
+  while ( Number of files in this block )
+    [4] Data Header / Data
+  end 
 end
 ```
