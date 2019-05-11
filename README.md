@@ -44,10 +44,10 @@ Pseudocode:
 [1] Format Header
 
 while ( Address of the next block > 0 )
-  [2] Block Header
+  [2] Block Header (12 bytes)
 
   while ( Max number of files per block )
-    [3] File Header
+    [3] File Header (34 bytes)
   end
 
   while ( Number of files in this block )
